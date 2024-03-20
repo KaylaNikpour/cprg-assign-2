@@ -13,15 +13,43 @@ body {
     grid-row:span 1;
 }
 */
+
+header {
+position: relative;
+width: 100%;
+height: 400px;
+}
+
+header h1, h2 {
+    text-align: center;
+}
+.header-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%, -50%);
+    color:#f5efff;
+}
+header h1 {
+    font-size:40px ;
+}
+
+header img {
+object-fit: cover;
+width: 100%;
+height: 100%;
+filter:blur(5px)
+  }
+  
+
 #card-container {
-    display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-    gap: 30px
+    margin:15px;
 }
 
 .card {
     box-shadow: 0 9px 9px 0 #8187dc;
-    width: 100%;
+    width:100%;
+    margin-bottom:15px;
   }
   
   .card:hover {
@@ -35,9 +63,6 @@ body {
     border-radius: 5px 5px 0 0;
     aspect-ratio: 16 /9;
   }
-
-
-
 
 .accordion-container {
     background-color:#e5d9f2;
@@ -83,3 +108,10 @@ body {
   }
   /* palette colours #7371fc #a594f9 #cdc1ff #f5efff #e5d9f2 #8187dc */
   
+  @media( width >=768px) {
+    #card-container {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 30px
+    }
+  }
