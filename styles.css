@@ -2,6 +2,9 @@
 body {
   background-color:#cdc1ff;
 }
+
+/*Hero Banner */
+
 header {
   position: relative;
   width: 100%;
@@ -41,6 +44,9 @@ header img {
   filter:blur(5px)
 }
 
+/*content section */
+
+
 #content img {
   display: flex;
   justify-content: center;
@@ -57,6 +63,8 @@ header img {
   font-family: "Jost", GolosText, Afacad;
   padding-left: 10px;
 }
+
+/* card */
 
 #card-container {
   display:flex;
@@ -104,11 +112,11 @@ header img {
     width:100%;
     aspect-ratio: 16 / 9;
 }
-.card-content {
-background-color: #ffd6ff;
-padding-left: 20px;
-padding-right: 20px;
-font-family: "Jost", GolosText, Afacad;
+  .card-content {
+    background-color: #ffd6ff;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: "Jost", GolosText, Afacad;
 }
 h3 {
   font-size: 30px;
@@ -121,9 +129,15 @@ div.card {
   background-color: #ffd6ff;
   height: 100%;
 }
+
+/* video */
+
 iframe {
   margin-right: 40px;
 }
+
+/*accordion*/
+
 #accordion h1 {
   font-size: 40px;
   margin-top: 80px;
@@ -175,8 +189,11 @@ iframe {
     font-family: "Jost", GolosText, Afacad;
   }
 
+/* footer */
+
   footer {
     text-align: center;
+    font-family:"Jost", GolosText, Afacad;
   }
   
   button.accordion {
