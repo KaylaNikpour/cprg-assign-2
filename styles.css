@@ -17,9 +17,9 @@ body {
   background-color:#cdc1ff;
 }
 header {
-position: relative;
-width: 100%;
-height: 400px;
+  position: relative;
+  width: 100%;
+  height: 400px;
 }
 header img {
   border-radius: 5px 5px 0 0;
@@ -44,38 +44,60 @@ display: flex;
 justify-content: center;
 }
 header img {
-object-fit: cover;
-width: 100%;
-height: 100%;
-filter:blur(5px)
-  }
-  
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  filter:blur(5px)
+}
+
+#content img {
+  display: flex;
+  justify-content: center;
+  width: 100%;   
+}
+#content {
+  margin-bottom: 80px;
+  margin-top: 80px;
+}
+#content h1 {
+  font-size: 40px;
+}
 
 #card-container {
-    margin:15px;
+  display:flex;
+  width: 100%;
+  height: auto;
+  flex-direction:row;
+  flex-wrap:wrap;
+  margin-right:40px;
+  justify-content:space-around;
+}
+#my-work h1 {
+  font-size: 40px;
 }
 
 .card {
     box-shadow: 4px 9px 9px 0px #8187dc;
     width:100%;
-    margin-bottom:30px;
     border: solid;
     border-color:#7371fc;
     border-radius: 0.25rem;
+    margin-bottom: 30px;
 }
   .card:hover {
     box-shadow: 0 8px 16px 0 #7371fc;
   }
-  .card .card-content {
-  padding: 2%;
+  div#card-content {
+  margin-bottom: 40px;
   }
 .card img {
     border-bottom: 0.25rem solid #7371fc;
     box-shadow: 0 4px 4px 0px #8187dc;
     border-radius: 0.25rem 0.25rem 0 0;
-    width: 100%;
+    width:100%;
+    height:75%;
+    object-fit: cover;
   }
-
   .card .commercial {
     position: relative;
     width: 100%;
@@ -83,13 +105,33 @@ filter:blur(5px)
     margin-bottom: 30px;
     box-shadow: 0 9px 9px 0 ;
     width:100%;
-    margin-bottom:0px;
+  
     aspect-ratio: 16 / 9;
 }
 .card-content {
-  background-color: #e5d9f2;
+background-color: #ffd6ff;
+padding-left: 20px;
+padding-right: 20px;
+}
+h3 {
+  font-size: 30px;
+  margin-top: 3%;
+}
+h4 {
+  font-size: 25px;
+}
+div.card {
+  background-color: #ffd6ff;
+  height: 100%;
 }
 
+#accordion h1 {
+  font-size: 40px;
+  margin-top: 80px;
+}
+#accordion {
+  margin-bottom: 30px;
+}
 .accordion-container {
     background-color:#cdc1ff;
     margin-bottom: 30px;
@@ -132,17 +174,43 @@ filter:blur(5px)
     margin-left: 10px;
     border-radius: 60px;
   }
+
+  footer {
+    text-align: center;
+  }
   
+  button.accordion {
+    font-size: 15px;
+  }
   /* palette colours #7371fc #a594f9 #cdc1ff #f5efff #e5d9f2 #8187dc */
   
   @media( width >=768px) {
-    img {
-    min-height: 15.5rem;
-    }
+    .content-info {
+      display: grid;
+      align-items: center; 
+      grid-template-columns: 1fr 1fr;
+      column-gap: 5px;
+      font-size: 20px;
+     }
+     
+     #content img {
+      margin-inline: auto;
+       max-width: 478px;
+       max-height:100%
+     }
+     
     #card-container {
         display: grid;
         grid-template-columns: repeat(2, minmax(0, 1fr));
         gap: 30px
-
+    }
+    .card img {
+      height:70%;
+    }
+    .card-content p {
+      font-size: 15px;
+    }
+    .card .commercial {
+      margin-top: 50px;
     }
   }

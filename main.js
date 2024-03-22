@@ -1,6 +1,6 @@
 
-var acc = document.getElementsByClassName("accordion");
-var i;
+let acc = document.getElementsByClassName("accordion");
+let i;
 
 for (i = 0; i < acc.length; i++) {console.log("are we here");
   acc[i].addEventListener("click", function() {
