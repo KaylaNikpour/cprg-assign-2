@@ -1,5 +1,5 @@
 
-body {
+#body {
   background-color:#cdc1ff;
 }
 
@@ -31,7 +31,7 @@ header h2 {
 header h1 {
     font-size:40px ;
 }
-h1 {
+h2 {
 display: flex;
 justify-content: center;
 font-family: "Sriracha", Damion;
@@ -56,7 +56,7 @@ header img {
   margin-bottom: 80px;
   margin-top: 80px;
 }
-#content h1 {
+#content h2 {
   font-size: 40px;
 }
 .content-info {
@@ -75,7 +75,7 @@ header img {
   margin-right:40px;
   justify-content:space-around;
 }
-#my-work h1 {
+#my-work h2 {
   font-size: 40px;
 }
 
@@ -138,7 +138,7 @@ iframe {
 
 /*accordion*/
 
-#accordion h1 {
+#accordion h2 {
   font-size: 40px;
   margin-top: 80px;
 }
