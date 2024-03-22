@@ -1,25 +1,11 @@
-/*
-body {
-    display: grid;
-    grid-template-columns: repeat(5, minmax(0, 1fr));
-    grid-template-rows: repeat(8, minmax(0, 1fr));
-    background-color: #e5d9f2; 
-}
-#header, #content, #card, #accordian, #footer {
-    grid-column: span 5 / span 5;
-}
 
-#content, #card, #card {
-    grid-row:span 1;
-}
-*/
 body {
   background-color:#cdc1ff;
 }
 header {
   position: relative;
   width: 100%;
-  height: 400px;
+  height: 500px;
 }
 header img {
   border-radius: 5px 5px 0 0;
@@ -28,6 +14,9 @@ header img {
 
 header h1, h2 {
     text-align: center;
+}
+header h2 {
+  font-family: "Jost", GolosText, Afacad;
 }
 .header-content {
     position: absolute;
@@ -42,6 +31,8 @@ header h1 {
 h1 {
 display: flex;
 justify-content: center;
+font-family: "Sriracha", Damion;
+
 }
 header img {
   object-fit: cover;
@@ -61,6 +52,10 @@ header img {
 }
 #content h1 {
   font-size: 40px;
+}
+.content-info {
+  font-family: "Jost", GolosText, Afacad;
+  padding-left: 10px;
 }
 
 #card-container {
@@ -103,15 +98,17 @@ header img {
     width: 100%;
     margin: 0 auto;
     margin-bottom: 30px;
-    box-shadow: 0 9px 9px 0 ;
+    box-shadow: 0 9px 9px 0 #8187dc;
+    border-bottom: 0.25rem solid #7371fc;
+    border-right: 0.25rem solid #7371fc;
     width:100%;
-  
     aspect-ratio: 16 / 9;
 }
 .card-content {
 background-color: #ffd6ff;
 padding-left: 20px;
 padding-right: 20px;
+font-family: "Jost", GolosText, Afacad;
 }
 h3 {
   font-size: 30px;
@@ -124,7 +121,9 @@ div.card {
   background-color: #ffd6ff;
   height: 100%;
 }
-
+iframe {
+  margin-right: 40px;
+}
 #accordion h1 {
   font-size: 40px;
   margin-top: 80px;
@@ -173,6 +172,7 @@ div.card {
     margin-right: 10px;
     margin-left: 10px;
     border-radius: 60px;
+    font-family: "Jost", GolosText, Afacad;
   }
 
   footer {
@@ -181,23 +181,38 @@ div.card {
   
   button.accordion {
     font-size: 15px;
+    font-family:"Jost", GolosText, Afacad;
   }
   /* palette colours #7371fc #a594f9 #cdc1ff #f5efff #e5d9f2 #8187dc */
-  
+
+
+  /* Tablet */
+
   @media( width >=768px) {
+
+    header {
+      height: 600px;
+    }
+    header h1 {
+      font-size:50px ;
+    }
+    header h2 {
+      font-size: 30px;
+    }
+    
     .content-info {
       display: grid;
       align-items: center; 
       grid-template-columns: 1fr 1fr;
       column-gap: 5px;
       font-size: 20px;
-     }
+    }
      
      #content img {
       margin-inline: auto;
        max-width: 478px;
        max-height:100%
-     }
+    }
      
     #card-container {
         display: grid;
@@ -208,9 +223,39 @@ div.card {
       height:70%;
     }
     .card-content p {
-      font-size: 15px;
+      font-size: 17px;
     }
     .card .commercial {
       margin-top: 50px;
+    }
+  button.accordion {
+    font-size: 20px;
+  }
+  }
+
+  /*Desktop view */
+
+  @media (width >=1100px) {
+
+    header {
+      height: 700px;
+    }
+    header h1 {
+      font-size:70px ;
+    }
+    header h2 {
+      font-size: 40px;
+    }
+    .content-info {
+      font-size:25px;
+      }
+    .card-content p {
+      font-size:25px;
+    }
+    button.accordion {
+      font-size: 30px;
+    }
+    .panel p{
+      font-size: 25px;
     }
   }
