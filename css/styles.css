@@ -9,39 +9,41 @@ header {
   position: relative;
   width: 100%;
   height: 500px;
+  background-color: #7371fc;
 }
 header img {
   border-radius: 5px 5px 0 0;
   aspect-ratio: 16 /9;
 }
 
-header h1, h2 {
+header h1 {
     text-align: center;
+    font-family: "Jost", GolosText, Afacad;
+    font-size: 60px;
 }
 header h2 {
-  font-family: "Jost", GolosText, Afacad;
+  min-width: 305px;
 }
+
 .header-content {
     position: absolute;
     top: 50%;
     left: 50%;
     transform:translate(-50%, -50%);
-    color:#f5efff;
+    color:white;
 }
-header h1 {
-    font-size:40px ;
-}
+
 h2 {
 display: flex;
 justify-content: center;
 font-family: "Sriracha", Damion;
-
 }
 header img {
   object-fit: cover;
   width: 100%;
   height: 100%;
-  filter:blur(5px)
+  filter:blur(8px);
+  opacity: .8;
 }
 
 /*content section */
@@ -113,7 +115,7 @@ header img {
     aspect-ratio: 16 / 9;
 }
   .card-content {
-    background-color: #ffd6ff;
+    background-color: #b1caff;
     padding-left: 20px;
     padding-right: 20px;
     font-family: "Jost", GolosText, Afacad;
@@ -126,7 +128,7 @@ h4 {
   font-size: 25px;
 }
 div.card {
-  background-color: #ffd6ff;
+  background-color: #b1caff;
   height: 100%;
 }
 
@@ -211,7 +213,7 @@ iframe {
       height: 600px;
     }
     header h1 {
-      font-size:50px ;
+      font-size:60px ;
     }
     header h2 {
       font-size: 30px;
